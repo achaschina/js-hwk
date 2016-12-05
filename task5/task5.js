@@ -14,8 +14,8 @@ function mathPow(x, y) {
 }
 
 // d(1) => {a:1}, b(123) => {a:123}
-function propObject(prop) {
-   var Obj = {a: "prop"};
+function d(prop) {
+   var Obj = {a: prop};
     return Obj;
 }
 
@@ -37,13 +37,11 @@ function f(a, b) {
     }
     return arr;
 }
-console.log(f('x',5))
 
 // h(function(){return 5}) => 5, h(function(){return 123}) => 123
 function h(func) {
     return func();
 }
-console.log(h(function(){return 123}));
 
 // j([1,2,3]) => 6, j([12,34,56]) => 102
 function j(arr) {
@@ -53,7 +51,6 @@ function j(arr) {
     }
     return sum;
 }
-console.log(j([1,2,3]))
 
 // k({a:1,b:2,c:3}) => 6, k({n:55,s:82}) => 137
 function k(obj) {
@@ -63,7 +60,6 @@ function k(obj) {
     }
     return sum;
 }
-console.log(k({a:1,b:2,c:3}));
 
 // m([1,2,3],[55,12,33]) => [56,14,36], m([2,3],[5,-1]) => [7,2]
 function m(arr1, arr2) {
@@ -73,7 +69,6 @@ function m(arr1, arr2) {
     }
     return resArr;
 }
-console.log(m([1,2,3],[55,12,33]));
 
 // n(1)(2)(3) => 6, n(5)(25)(8) => 38, n(3)(-5)(0) => -2
 function n(x) {
@@ -83,4 +78,3 @@ function n(x) {
         }
     }
 }
-console.log(n(1)(2)(3));
