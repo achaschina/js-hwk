@@ -38,6 +38,15 @@ function f(a, b) {
     return arr;
 }
 
+// g() => 99, b(1) => 1, b(2) => 2, b(3) => 3, b(99) => 99
+function g(a) {
+    if (a) {
+        return a;
+    } else {
+        return 99;
+    }
+}
+
 // h(function(){return 5}) => 5, h(function(){return 123}) => 123
 function h(func) {
     return func();
