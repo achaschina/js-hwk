@@ -1,7 +1,7 @@
 var prizes = [10, 5, 2];
 
 function firstPlay() {
-    var answer = confirm("Do you want to play the game?");
+    var answer = confirm("Do you want to play the game? You have 3 attemps to guess a number.");
     if (!answer) {
         console.log("Today you will not win the jackpot, but you could");
         return;
