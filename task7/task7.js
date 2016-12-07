@@ -1,6 +1,4 @@
-//To start the Game call function firstPlay() in console
-
-var prizes  = [10, 5, 2];
+var prizes = [10, 5, 2];
 
 function firstPlay() {
     var answer = confirm("Do you want to play the game?");
@@ -15,7 +13,7 @@ function firstPlay() {
     if (answer) {
         jackPot += playGame(3);
     }
-    console.log("Your total win: " + jackPot);
+    alert("Your total win: " + jackPot);
 }
 
 function playGame(coef) {
@@ -36,3 +34,5 @@ function getUserNumber() {
     var userNumber = prompt("Please enter your number.");
     return userNumber;
 }
+
+firstPlay();
