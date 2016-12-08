@@ -4,7 +4,7 @@ function playGame() {
     if (!userNumber) {
         return;
     }
-    while (true) {
+    while (userNumber) {
         if (userNumber > ourNumber) {
             alert("Your number is higher than ours. Try againe!");
             userNumber = getUserNumber();
@@ -31,8 +31,8 @@ function getUserNumber() {
             alert("Goodbay!!!");
             return false;
         }
-        userNumber = parseInt(userNumber);
-        return userNumber;
     }
+    userNumber = parseInt(userNumber);
+    return userNumber;
 }
 playGame();
